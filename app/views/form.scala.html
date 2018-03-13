@@ -1,0 +1,61 @@
+@(users: Seq[User], form: Form[UserData])
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+
+
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Welcome to Play") {
+    @helper.form(action = helper.CSRF(routes.Application.postForm())) {
+        @*
+        * Get an `Html` object by calling the built-in Play welcome
+        * template and passing a `String` message.
+        * <form action="@routes.Application.addPerson()" method="post">
+        <input type="text" name="name"/>
+        <button>addperson</button>
+        </form>
+        *@
+        <h1>assignment1</h1>
+
+        @* Flash shows updates to a page *@
+        @flash.asScala.map{ case (name, value) =>
+        <div class="@name">@value</div>
+        }
+
+        <table>
+            <thead>
+                <tr><th>Name</th><th>password</th>
+            </thead>
+            <tbody>
+            @for(u <- users) {
+                <tr><td>@u.name</td><td>@u.password</td></tr>
+            }
+            </tbody>
+        </table>
+
+        <hr/>
+
+        @* Global errors are not tied to any particular form field *@
+
+
+        @helper.form(routes.Application.postForm()) {
+            @helper.CSRF.formField
+
+            @helper.inputText(form("name"))
+
+            @helper.inputText(form("password"))
+
+            <button type="submit">Create </button>
+        }
+
+        }
+
+
+
+    }
