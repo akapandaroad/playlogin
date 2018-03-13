@@ -1,0 +1,48 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="InspectionProjectProfileManager">
+        <option name="PROJECT_PROFILE" />
+        <version value="1.0" />
+      </component>
+      <component name="PropertiesComponent">
+        <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+        <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+      </component>
+      <component name="SbtLocalSettings">
+        <option name="externalProjectsViewState">
+          <projects_view />
+        </option>
+        <option name="projectSyncType">
+          <map>
+            <entry key="$USER_HOME$/Desktop/play-ebean-master" value="PREVIEW" />
+            <entry key="$USER_HOME$/Desktop/play-java-forms-example" value="PREVIEW" />
+            <entry key="$USER_HOME$/Desktop/play-java-seed" value="PREVIEW" />
+            <entry key="$USER_HOME$/Desktop/play-java-seed 2" value="PREVIEW" />
+            <entry key="$USER_HOME$/Desktop/play-java-starter-example" value="PREVIEW" />
+            <entry key="$USER_HOME$/Desktop/twitterTest" value="PREVIEW" />
+          </map>
+        </option>
+      </component>
+      <component name="VcsContentAnnotationSettings">
+        <option name="myLimit" value="2678400000" />
+      </component>
+      <component name="masterDetails">
+        <states>
+          <state key="ProjectJDKs.UI">
+            <settings>
+              <last-edited>1.8</last-edited>
+              <splitter-proportions>
+                <option name="proportions">
+                  <list>
+                    <option value="0.2" />
+                  </list>
+                </option>
+              </splitter-proportions>
+            </settings>
+          </state>
+        </states>
+      </component>
+    </defaultProject>
+  </component>
+</application>
